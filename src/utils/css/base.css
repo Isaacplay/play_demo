@@ -1,0 +1,151 @@
+/*===============================================================*/
+/*========================== 基础样式 ============================*/
+/*===============================================================*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, address, cite,
+em, img,
+small, strong, sub, sup,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, section, summary,
+time, mark, audio, video,input {
+  margin: 0;  padding: 0;  border: 0;  outline: 0;  vertical-align: baseline;  background: transparent;  -webkit-text-size-adjust: none;
+  word-break: break-all;  word-wrap: break-word;  box-sizing: border-box; color: #333333; font-size: 15px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+a:link, a:visited, a:hover , a:active{
+  color: #3B384C;
+  cursor: pointer;
+}
+:focus {
+  outline: 0;
+}
+ul {
+  list-style: none;
+}
+/*==== 以上为阿里巴巴基础样式 ===*/
+
+*::-webkit-scrollbar {
+  /*移除所有滚动条*/
+  display: none;
+}
+.container {
+  padding: 0;  margin: 0;  width: 100%;  height: 100%;  background-color: white;
+  /*修复手机端上下拉动滚动条时卡顿、慢*/
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+/*一行省略*/
+.text-overflow {
+  /*文字超出省略号  */
+  overflow:hidden; /*超出一行文字自动隐藏*/
+  text-overflow:ellipsis;/*文字隐藏后添加省略号*/
+  white-space:nowrap;  /*强制不换行*/
+}
+
+/*两行省略*/
+.text-overflow-two {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+}
+
+input, textarea {
+  outline: none;  border: 0;  background: none;  font-size: 0.9rem;  resize: none;
+}
+.hidden {
+  display: none;
+}
+/*===============================================================*/
+/*===============================================================*/
+
+
+/*===============================================================*/
+/*======================== 暂无内容样式 ===========================*/
+/*===============================================================*/
+.no-content {
+  position: absolute;  top: 35%;  left: 0;  width: 100%;  font-size: 1rem;  color: rgb(51,51,51);  text-align: center;
+}
+.no-content-img {
+  margin: 0 auto;  width: 84px;  height: 106px;
+}
+.no-content-img img {
+  width: 100%;  height: 100%;
+}
+.no-content-text {
+  font-size: 0.8rem;  color: #888888;  height: 30px;  line-height: 30px;
+}
+.mescroll-empty .empty-icon {
+  width: 84px;  height: 106px;
+}
+/*===============================================================*/
+/*===============================================================*/
+
+
+/*===============================================================*/
+/*========================== 公共弹出框样式 =======================*/
+/*===============================================================*/
+.common-pop {
+  position: fixed;  left: 0;  right: 0;  top: 0;  bottom: 0;  background-color: rgba(0,0,0,0.5);
+}
+.common-pop-content {
+  padding: 15px;  border-radius: 4px;  width: 80%;  position: absolute; background-color: white; left: 50%;  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);  -o-transform: translate3d(-50%, -50%, 0);  transform: translate3d(-50%, -50%, 0);
+}
+.common-pop-item {
+  height: 40px;  line-height: 40px;
+}
+/*===============================================================*/
+/*===============================================================*/
+
+
+/*===============================================================*/
+/*========================= 顶部导航条 ===========================*/
+/*===============================================================*/
+.navi-header {
+  position: fixed;  left: 0;  top: 0;  width: 100%;  height: 44px; line-height: 44px;  z-index: 100;  background-color: rgb(62,149,255);  color: white;  font-size: 1rem;
+}
+.navi-header-bottom {
+  border: 1px solid #EDEDED;
+}
+.header-left {
+  position: absolute;  left: 15px;  top: 0;  height: 44px;  line-height: 44px;  width: 90px;  font-size: 0.9rem;
+}
+.header-left span {
+  float: left;  max-width: 75px;
+  overflow:hidden; /*超出一行文字自动隐藏*/
+  text-overflow:ellipsis;/*文字隐藏后添加省略号*/
+  white-space:nowrap;  /*强制不换行*/
+}
+.header-left img {
+  float: left;  width: 10px;  height: auto;  margin: 12px 0 12px 5px;
+}
+.header-title {
+  position: absolute;  left: 0;  right: 0;  top: 0;  bottom: 0;  height: 44px;  line-height: 44px;  text-align: center;
+}
+.header-right {
+  position: absolute;  right: 15px;  top: 0;  height: 44px;  line-height: 44px;  text-align: right;  font-size: 0.9rem;
+}
+/*===============================================================*/
+/*===============================================================*/
+
+.content {
+  position: fixed;  left: 0;  top: 44px;  width: 100%;  bottom: 0;  overflow: scroll;
+  /*修复手机端上下拉动滚动条时卡顿、慢*/
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
