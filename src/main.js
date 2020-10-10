@@ -4,6 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
+import Vuex from 'vuex'
+Vue.use(Vuex)
+const store = new Vuex.Store({
+  state:{
+    name:'1111', // this.$store.state.name
+    
+  }
+});
+
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title;
@@ -19,7 +29,7 @@ Vue.use(VueLazyload, {
 
 new Vue({
   el: '#app',
-  router,
+  router,store,
   components: { App },
   template: '<App/>'
 })
