@@ -10,7 +10,8 @@
     data () {
       return {
         data_list:[
-          {name:'flv.js',val:'flv'}
+          {name:'flv.js',val:'flv'},
+          {name:'solt',val:'solt'}
         ],
       }
     },
@@ -30,15 +31,17 @@
 .container{
   padding: 10px 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 .con-item{
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   background-color: rgb(245,245,245);
+  margin-right: 15px;
 }
 
 </style>

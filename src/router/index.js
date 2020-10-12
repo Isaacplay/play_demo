@@ -4,7 +4,7 @@ import Router from 'vue-router'
 import Index from '@/components/base/Index'
 
 import flv from '@/components/demo_page/flv'
-
+import solt from '@/components/demo_page/solt'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +28,14 @@ export default new Router({
       component: flv,
       meta: {
         title: 'flv'
+      }
+    },
+    {
+      path: '/solt',
+      name: 'solt',
+      component: solt,
+      meta: {
+        title: 'solt'
       }
     },
   ]
