@@ -5,6 +5,7 @@ import Index from '@/components/base/Index'
 
 import flv from '@/components/demo_page/flv'
 import solt from '@/components/demo_page/solt'
+import css_test from '@/components/demo_page/css_test'
 Vue.use(Router)
 
 export default new Router({
@@ -36,6 +37,14 @@ export default new Router({
       component: solt,
       meta: {
         title: 'solt'
+      }
+    },
+    {
+      path: '/css_test',
+      name: 'css_test',
+      component: css_test,
+      meta: {
+        title: 'css_test'
       }
     },
   ]

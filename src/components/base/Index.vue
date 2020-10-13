@@ -11,7 +11,7 @@
       return {
         data_list:[
           {name:'flv.js',val:'flv'},
-          {name:'solt',val:'solt'}
+          {name:'solt',val:'solt'},{name:'css_test',val:'css_test'}
         ],
       }
     },
